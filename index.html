@@ -2,17 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моя страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN API Test Task</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Моя первая веб-страница</h1>
+    <div class="container">
+        <!-- Левая колонка -->
+        <div class="left-column">
+            <div class="section">
+                <input type="text" id="idInstance" placeholder="idInstance">
+                <input type="text" id="apiTokenInstance" placeholder="apiTokenInstance">
+            </div>
 
-    <p>Я изучаю HTML.</p>
+            <div class="section">
+                <button id="btnGetSettings" onclick="getSettings()">getSettings</button>
+                <button id="btnGetStateInstance" onclick="getStateInstance()">getStateInstance</button>
+            </div>
 
-    <button>Нажми меня</button>
+            <div class="section">
+                <input type="text" id="phoneNumberMessage" placeholder="77771234567">
+                <textarea id="messageText" placeholder="Hello World!"></textarea>
+                <button id="btnSendMessage" onclick="sendMessage()">sendMessage</button>
+            </div>
 
-    <h2>Что я изучаю:</h2>
+            <div class="section">
+                <input type="text" id="phoneNumberFile" placeholder="77771234567">
+                <input type="text" id="fileUrl" placeholder="https://my.site.com/img/horse.png">
+                <button id="btnSendFileByUrl" onclick="sendFileByUrl()">sendFileByUrl</button>
+            </div>
+        </div>
 
+        <!-- Правая колонка -->
+        <div class="right-column">
+            <label for="response">Ответ:</label>
+            <textarea id="response" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
