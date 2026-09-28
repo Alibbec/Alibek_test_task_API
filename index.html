@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN API Test Task</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -13,24 +14,24 @@
         <div class="left-column">
             <div class="section">
                 <input type="text" id="idInstance" placeholder="idInstance">
-                <input type="text" id="apiTokenInstance" placeholder="apiTokenInstance">
+                <input type="text" id="apiToken" placeholder="apiTokenInstance">
             </div>
 
             <div class="section">
-                <button id="btnGetSettings" onclick="getSettings()">getSettings</button>
-                <button id="btnGetStateInstance" onclick="getStateInstance()">getStateInstance</button>
+                <button id="getSettingsBtn">getSettings</button>
+                <button id="getStateInstanceBtn">getStateInstance</button>
             </div>
 
             <div class="section">
-                <input type="text" id="phoneNumberMessage" placeholder="77771234567">
-                <textarea id="messageText" placeholder="Hello World!"></textarea>
-                <button id="btnSendMessage" onclick="sendMessage()">sendMessage</button>
+                <input type="text" id="phoneNumber" placeholder="77771234567">
+                <textarea id="message" placeholder="Hello World!"></textarea>
+                <button id="sendMessageBtn">sendMessage</button>
             </div>
 
             <div class="section">
-                <input type="text" id="phoneNumberFile" placeholder="77771234567">
+                <input type="text" id="filePhoneNumber" placeholder="77771234567">
                 <input type="text" id="fileUrl" placeholder="https://my.site.com/img/horse.png">
-                <button id="btnSendFileByUrl" onclick="sendFileByUrl()">sendFileByUrl</button>
+                <button id="sendFileBtn">sendFileByUrl</button>
             </div>
         </div>
 
@@ -41,6 +42,5 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
