@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя страница</title>
+</head>
+<body>
+
+    <h1>Моя первая веб-страница</h1>
+
+    <p>Я изучаю HTML.</p>
+
+    <button>Нажми меня</button>
+
+    <h2>Что я изучаю:</h2>
+
+</body>
+</html>
